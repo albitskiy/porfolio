@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Anton Albitskiy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+	
+	<div class="video-container">
+		<video id="miVideo" poster="posterfata.png" controlsList="nodownload">
+			<source src="fatamorgana.mp4" type="video/mp4" controlsList="nodownload">
+		</video>
+		
+		<button id="playButton" onclick="reproducirVideo()">
+		
+			<!-- SVG triangular -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+				<polygon points="5,3 19,12 5,21" />
+			</svg>
+		</button>
+	</div>
+
+	<script>
+		function reproducirVideo() {
+		var video = document.getElementById("miVideo");
+		var playButton = document.getElementById("playButton");
+    
+		video.play();
+		video.controls = true;
+		playButton.style.display = "none";
+		}
+	</script>
+
+	<p>FATA MORGANA / NACIÓ</p>
+	
+	<p><em>Dirección artística, Diseño, Animación, Edición, Sonido</em></p>
+	
+	<br>
+	
+	<p>SELECCIÓN DE PROYECTOS</p>
+	<p><a href="/fatamorgana.html">Fata Morgana — NACIÓ</a></p>
+	<p><a href="/fatamorgana.html">Nezuko — ROJUU</a></p>
+	<p><a href="/fatamorgana.html">Reebok Aztrek — SI VAS DESCALZO</a></p>
+	<p><a href="/fatamorgana.html">Afterparty — SPECTRAL MAG</a></p>
+	<p><a href="/fatamorgana.html">The Entire History of You</a></p>
+	
+	<br>
+	
+	<p>ANTON ALBITSKIY</p>
+	<p>antonalbitskiy@gmail.com</p>
+	
+	
+
+  </body>
+</html>
