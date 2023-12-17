@@ -1,57 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Anton Albitskiy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-	
-	<div class="video-container">
-		<video id="miVideo" poster="posterfata.png" controlsList="nodownload">
-			<source src="fatamorgana.mp4" type="video/mp4" controlsList="nodownload">
-		</video>
+</head>
+
+
+<body>
+    <div class="contenedor">
+        <div class="seccion-video">
 		
-		<button id="playButton" onclick="reproducirVideo()">
+            <!-- Inserta aquí tu etiqueta de video con el enlace a tu video -->
+			
+            <video id="miVideo" width="100%" height="auto" autoplay muted controls>
+                <source src="fatamorgana.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+				
+		<p>FATA MORGANA / NACIÓ</p>
+		<p><em>Dirección artística, Diseño, Animación, Edición, Sonido</em></p>
 		
-			<!-- SVG triangular -->
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-				<polygon points="5,3 19,12 5,21" />
-			</svg>
-		</button>
-	</div>
-
-	<script>
-		function reproducirVideo() {
-		var video = document.getElementById("miVideo");
-		var playButton = document.getElementById("playButton");
-    
-		video.play();
-		video.controls = true;
-		playButton.style.display = "none";
-		}
-	</script>
-
-	<p>FATA MORGANA / NACIÓ</p>
-	
-	<p><em>Dirección artística, Diseño, Animación, Edición, Sonido</em></p>
-	
-	<br>
-	
-	<p>SELECCIÓN DE PROYECTOS</p>
-	<p><a href="/fatamorgana.html">Fata Morgana — NACIÓ</a></p>
-	<p><a href="/fatamorgana.html">Nezuko — ROJUU</a></p>
-	<p><a href="/fatamorgana.html">Reebok Aztrek — SI VAS DESCALZO</a></p>
-	<p><a href="/fatamorgana.html">Afterparty — SPECTRAL MAG</a></p>
-	<p><a href="/fatamorgana.html">The Entire History of You</a></p>
-	
-	<br>
-	
-	<p>ANTON ALBITSKIY</p>
-	<p>antonalbitskiy@gmail.com</p>
-	
-	
-
-  </body>
+		</div>
+		
+		
+		
+        <div class="seccion-imagenes">
+            <ul>
+                <a href="">
+				<li>
+					<div class="elemento">
+						<img src="posterpaula.png">
+						
+						<p class="descripcion">SOÑANDO CONTIGO<br>Paula Felices<br><em>Montaje</em></p>
+						
+					</div>
+				</li>
+				</a>
+				
+				 <a href="">
+				<li>
+					<div class="elemento">
+						<img src="posterspectral.png">
+						
+							<p class="descripcion">LAUNCH PARTY<br>Spectral Magazine<br><em>Montaje</em></p>
+					
+					</div>
+				</li>
+				</a>
+				
+                <a href="">
+				<li>
+					<div class="elemento">
+						<img src="posterreebok.png">
+						
+							<p class="descripcion">REEBOK AZTREK<br>Si Vas Descalzo<br><em>Montaje</em></p>
+					
+					</div>
+				</li>
+				</a>
+				
+				<a href="">
+				<li>
+					<div class="elemento">
+						<img src="postergina.png">
+						
+							<p class="descripcion">IT'S FANTASTIC<br>Gina Berenguer<br><em>Montaje</em></p>
+					
+					</div>
+				</li>
+				</a>
+				
+                <a href="">
+				<li>
+					<div class="elemento">
+						<img src="posterblackmirror.png">
+						
+							<p class="descripcion">HDD<br>Personal Project<br><em>Animación</em></p>
+					
+					</div>
+				</li>
+				</a>
+                <!-- Añade más imágenes según sea necesario -->
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
