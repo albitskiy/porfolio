@@ -1,71 +1,117 @@
-html {
-  box-sizing: border-box;
+body {
+    margin: 8px;
+    padding: 0;
+	font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 18px;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+.container {
+    text-align: center;
 }
 
-body{
-	font-size:14px;
-	font-family: Sans-serif;
-	line-height:20px;
+.fixed-container {
+    position: fixed;
+    top: 8px;
+    left: 50vw;
+    transform: translateX(-50%);
 }
 
-em{
-	font-size:12px;
-	opacity:0.7;
+.image-frame {
+    top: 8px;
+    left: 8px;
+    max-height: calc(100vh - 16px);
 }
 
-a{
-	text-decoration: none;
+.image-column {
+    width: 16.66667%; /* 1/6 del ancho total */
+    min-width: 100px;
 }
-a:hover{
-	text-decoration:underline;
+
+.image-column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
 }
+
+.centered-text {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+
+.image-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image-text {
+    margin-left: 8px; /* Ajusta la distancia entre la imagen y el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	
+}
+
+.image-text div {
+    white-space: nowrap; /* Evita que el texto haga saltar de línea */
+}
+
+.image-container {
+    display: flex; /* Usa Flexbox */
+    justify-content: flex-start; /* Alinea horizontalmente */
+    transition: all 1s ease; /* Transición suave */
+}
+
+.image-container:hover {
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+}
+
+.click:hover {
+    cursor: pointer; /* Cambia el cursor a una mano para indicar interactividad */
+	filter: grayscale(100%);
+	opacity: 0.8;
+	transition:0s;
+}
+
 .video-container {
-  position: relative;
-  width: 50%;
+    width: 50%; /* Ajusta este valor según necesidad */
+    height: auto; /* Mantiene la relación de aspecto */
+    display: none; /* Oculto inicialmente */
 }
 
-#playButton {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0);
-  color: #fff;
-  border: none;
-  padding: 10px 10px;
-  cursor: pointer;
-  font-size: 16px;
-  display: block;
+.image-text {
+    margin-left: 8px; /* Ajusta la distancia entre la imagen/video y el texto */
 }
 
-#miVideo {
-  width: 100%;
+.video-container {
+    width: calc(50vw - 8px); /* 50% del ancho de la ventana del navegador */
+    height: auto; /* 30% del alto de la ventana del navegador */
+	margin-bottom: 8px;
+    /* Otros estilos... */
 }
 
-<style>
-  /* Estilos para el triángulo */
-  #playButton {
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
+.additional-text {
+    /* Tus estilos aquí */
+    margin-left: 8px; /* Ejemplo de margen superior */
+	white-space: nowrap; /* Evita que el texto haga saltar de línea */
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 
-  #playButton svg {
-    fill: #fff; /* Color del triángulo */
-    width: 30px;
-    height: 30px;
-	filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
-  }
-  
- p{
-	 padding:0;
-	 margin:0;
- }
-</style>
+.video-container {
+    /* Otros estilos... */
+    transition: transform 0.5s ease; /* Transición suave para la transformación */
+    transform-origin: top left; /* Punto de origen para la transformación */
+}
+
+/* Clase para escalar el video */
+.scaled-up {
+    transform: scale(1); /* Ajusta este valor según el tamaño deseado */
+}
+
+

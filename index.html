@@ -3,88 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Anton Albitskiy</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Sitio Web</title>
 </head>
-
-
 <body>
-    <div class="contenedor">
-        <div class="seccion-video">
-		
-            <!-- Inserta aquí tu etiqueta de video con el enlace a tu video -->
-			
-            <video id="miVideo" width="100%" height="auto" autoplay muted controls>
-                <source src="fatamorgana.mp4" type="video/mp4">
-                Tu navegador no soporta el elemento de video.
-            </video>
-				
-		<p>FATA MORGANA / NACIÓ</p>
-		<p><em>Dirección artística, Diseño, Animación, Edición, Sonido</em></p>
-		
-		</div>
-		
-		
-		
-        <div class="seccion-imagenes">
-            <ul>
-                <a href="">
-				<li>
-					<div class="elemento">
-						<img src="posterpaula.png">
-						
-						<p class="descripcion">SOÑANDO CONTIGO<br>Paula Felices<br><em>Montaje</em></p>
-						
-					</div>
-				</li>
-				</a>
-				
-				 <a href="">
-				<li>
-					<div class="elemento">
-						<img src="posterspectral.png">
-						
-							<p class="descripcion">LAUNCH PARTY<br>Spectral Magazine<br><em>Montaje</em></p>
-					
-					</div>
-				</li>
-				</a>
-				
-                <a href="">
-				<li>
-					<div class="elemento">
-						<img src="posterreebok.png">
-						
-							<p class="descripcion">REEBOK AZTREK<br>Si Vas Descalzo<br><em>Montaje</em></p>
-					
-					</div>
-				</li>
-				</a>
-				
-				<a href="">
-				<li>
-					<div class="elemento">
-						<img src="postergina.png">
-						
-							<p class="descripcion">IT'S FANTASTIC<br>Gina Berenguer<br><em>Montaje</em></p>
-					
-					</div>
-				</li>
-				</a>
-				
-                <a href="">
-				<li>
-					<div class="elemento">
-						<img src="posterblackmirror.png">
-						
-							<p class="descripcion">HDD<br>Personal Project<br><em>Animación</em></p>
-					
-					</div>
-				</li>
-				</a>
-                <!-- Añade más imágenes según sea necesario -->
-            </ul>
+    <div class="container">
+        <div class="fixed-container" id="central-text">
+            <div id="text1" class="centered-text">ANTON ALBITSKIY</div>
+            <div id="text2" class="centered-text">ANTONALBITSKIY@GMAIL.COM</div>
+            <div id="text3" class="centered-text">+34 653 50 60 38</div>
         </div>
     </div>
+    <!-- Contenedor fijo para la columna de imágenes -->
+    <div class="image-frame">
+        <!-- Columna de imágenes -->
+        <div class="image-column">
+		
+			<div class="image-container">
+                <img src="fata.webp" class="clickable click">
+					<!-- Contenedor del video (oculto inicialmente) -->
+				<video class="video-container" controls style="display: none;">
+					<source src="fata.webm" type="video/mp4">
+				</video>
+				<div class="additional-text" style="display: none;">
+					<div>HOLA K TAL</div>
+				</div>
+                <div class="image-text clickable click">
+                    <div class="tittle">SOÑANDO CONTIGO</div>
+                    <div class="client">PAULA FELICES</div>
+                    <div class="year">2022</div>
+                </div>
+            </div>
+			
+            
+			<div class="image-container">
+                <img src="contigo.webp" class="clickable click">
+					<!-- Contenedor del video (oculto inicialmente) -->
+				<video class="video-container" controls style="display: none;">
+					<source src="fata.webm" type="video/mp4">
+				</video>
+				<div class="additional-text" style="display: none;">
+					<div>HOLA K TAL</div>
+				</div>
+                <div class="image-text clickable click">
+                    <div class="tittle">SOÑANDO CONTIGO</div>
+                    <div class="client">PAULA FELICES</div>
+                    <div class="year">2022</div>
+                </div>
+            </div>
+			
+			<div class="image-container">
+                <img src="spectral.webp" class="clickable click">
+					<!-- Contenedor del video (oculto inicialmente) -->
+				<video class="video-container" controls style="display: none;">
+					<source src="fata.webm" type="video/mp4">
+				</video>
+				<div class="additional-text" style="display: none;">
+					<div>HOLA K TAL</div>
+				</div>
+                <div class="image-text clickable click">
+                    <div class="tittle">SOÑANDO CONTIGO</div>
+                    <div class="client">PAULA FELICES</div>
+                    <div class="year">2022</div>
+                </div>
+            </div>
+			
+			<div class="image-container">
+                <img src="reebok.webp" class="clickable click">
+					<!-- Contenedor del video (oculto inicialmente) -->
+				<video class="video-container" controls style="display: none;">
+					<source src="fata.webm" type="video/mp4">
+				</video>
+				<div class="additional-text" style="display: none;">
+					<div>HOLA K TAL</div>
+				</div>
+                <div class="image-text clickable click">
+                    <div class="tittle">SOÑANDO CONTIGO</div>
+                    <div class="client">PAULA FELICES</div>
+                    <div class="year">2022</div>
+                </div>
+            </div>
+			
+			<div class="image-container">
+                <img src="gina.webp" class="clickable click">
+					<!-- Contenedor del video (oculto inicialmente) -->
+				<video class="video-container" controls style="display: none;">
+					<source src="fata.webm" type="video/mp4">
+				</video>
+				<div class="additional-text" style="display: none;">
+					<div>HOLA K TAL</div>
+				</div>
+                <div class="image-text clickable click">
+                    <div class="tittle">SOÑANDO CONTIGO</div>
+                    <div class="client">PAULA FELICES</div>
+                    <div class="year">2022</div>
+                </div>
+            </div>
+			
+			<div class="image-container">
+                <img src="hdd.webp" class="clickable click">
+					<!-- Contenedor del video (oculto inicialmente) -->
+				<video class="video-container" controls style="display: none;">
+					<source src="fata.webm" type="video/mp4">
+				</video>
+				<div class="additional-text" style="display: none;">
+					<div>HOLA K TAL</div>
+				</div>
+                <div class="image-text clickable click">
+                    <div class="tittle">SOÑANDO CONTIGO</div>
+                    <div class="client">PAULA FELICES</div>
+                    <div class="year">2022</div>
+                </div>
+            </div>
+			
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
